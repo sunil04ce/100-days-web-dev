@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(34, 33, 33);
+  margin: 8rem;
+}
+
+input {
+  width: 20rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+button {
+  display: block;
+}
