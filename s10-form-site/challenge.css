@@ -1,11 +1,11 @@
 body {
-  background-color: rgb(34, 33, 33);
-  font-family: "Roboto", sans-serif;
+  background-color: rgb(194, 224, 241);
+  font-family: sans-serif;
 }
 
 h1 {
   text-align: center;
-  color: white;
+  margin: 2rem;
 }
 
 ul {
@@ -15,10 +15,11 @@ ul {
 }
 
 form {
-  width: 30rem;
-  margin: 3rem auto;
-  background-color: rgb(255, 255, 255);
+  width: 40rem;
+  margin: auto;
+  background-color: rgb(234, 246, 252);
   padding: 1rem;
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.2);
   border-radius: 6px;
 }
 
@@ -28,7 +29,7 @@ label {
 }
 
 textarea {
-  resize: vertical;
+  resize: none;
 }
 
 input,
