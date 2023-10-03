@@ -16,38 +16,37 @@
         <h1>Contact Us</h1>
     </header>
     <main>
-        <form action="/" method="GET">
+        <form action="/challenge" method="GET">
             <section>
                 <h2>How can we help you ?</h2>
                 <ul>
                     <li>
-                        <label for="yourname">Your Name</label>
-                        <input type="text" id="yourname" name="your-name" required />
+                        <label for="username">Your Name</label>
+                        <input type="text" id="username" name="user-name" required />
                     </li>
                     <li>
-                        <label for="youremail">Your E-mail Address</label>
-                        <input type="email" id="youremail" name="your-email" required />
+                        <label for="useremail">Your E-mail Address</label>
+                        <input type="email" id="useremail" name="user-email" required />
                     </li>
                     <li>
-                        <label for="yourphone">Your Phone Number</label>
-                        <input type="tel" id="yourphone" name="your-phone" required />
+                        <label for="phone">Your Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required minlength="5" />
                     </li>
                     <li>
-                        <label for="yourmessage">Your Message</label>
-                        <textarea id="yourmessage" name="your-message" rows="5" required>
-                            </textarea>
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" required minlength="10"
+                            maxlength="200"></textarea>
+                    </li>
 
-                    </li>
-                    <li>
-                        <label for="findus">How did you find us?</label>
-                        <select id="findus" name="find-us">
-                            <option value="WebSearch">Web Search</option>
-                            <option value="WordOfMouth">Word of mouth</option>
-                            <option value="Other">Other</option>
-                        </select>
-
-                    </li>
                 </ul>
+            </section>
+            <section>
+                <label for="findus">How did you find us?</label>
+                <select id="findus" name="find-us" required>
+                    <option value="WebSearch">Web Search</option>
+                    <option value="WordOfMouth">Word of mouth</option>
+                    <option value="Other">Other</option>
+                </select>
             </section>
             <section>
                 <h2>How should we reply?</h2>
@@ -75,9 +74,9 @@
                 </ul>
             </section>
 
-            <section class="">
-                <button type="reset">Clear</button>
-                <button type="submit">Submit</button>
+            <section id="form-actions">
+                <button type="reset" class="btn-empty">Clear</button>
+                <button type="submit" class="btn-filled">Submit</button>
             </section>
         </form>
 
