@@ -15,9 +15,9 @@ function calAdultAge(userAge) {
     return userAge - 18;
 }
 
-alert(calAdultAge(age));
+console.log(calAdultAge(age));
 age = 45;
-alert(calAdultAge(age));
+console.log(calAdultAge(age));
 
 // let greetingText = 'Hi, I\'m Jack!';
 // let age = 50;
@@ -27,3 +27,11 @@ alert(calAdultAge(age));
 // alert(age);
 // age = 51;
 // alert('Updated age : ' + age);
+
+let person = {
+    name: 'Max',
+    greet() {
+        console.log('Hello!');
+    }
+}
+person.greet()
