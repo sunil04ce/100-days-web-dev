@@ -18,6 +18,12 @@ let fpara = document.querySelector("p");
 
 fpara.append(newAnchorElement);
 
-let fh1Element = document.querySelector("h1");
-fh1Element.remove();
-// fh1Element.parentElement.removeChild(fh1Element);
+let firstH1Element = document.querySelector("h1");
+firstH1Element.remove();
+// firstH1Element.parentElement.removeChild(firstH1Element);
+
+fpara.parentElement.append(fpara);
+
+console.log("first paragraph innerHTML : ", fpara.innerHTML);
+
+fpara.innerHTML = "Hi! This is <strong>important!</strong>";
