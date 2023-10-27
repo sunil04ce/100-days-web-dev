@@ -1,29 +1,16 @@
-// console.dir(document);
-// document.body.children[1].children[0].href = 'https://google.com';
+let paraElement = document.querySelector("p");
 
-let anchorElement = document.getElementById("external-link");
-anchorElement.innerHTML = "google link";
-anchorElement.href = "https://google.com";
+function changeParagraphText() {
+  console.log("clicked called..");
+  paraElement.textContent = "Clicked!";
+}
 
-anchorElement = document.querySelector("#external-link");
-// anchorElement = document.querySelector('a');
-// anchorElement = document.querySelector('p a');
-anchorElement.href = "https://academind.com";
+paraElement.addEventListener("click", changeParagraphText);
 
-let newAnchorElement = document.createElement("a");
-newAnchorElement.href = "https://google.com";
-newAnchorElement.textContent = "this leads to google";
+let inputElement = document.querySelector("input");
+function inputChangedListener() {
+  let text = inputElement.value;
+  console.log(text);
+}
 
-let fpara = document.querySelector("p");
-
-fpara.append(newAnchorElement);
-
-let firstH1Element = document.querySelector("h1");
-firstH1Element.remove();
-// firstH1Element.parentElement.removeChild(firstH1Element);
-
-fpara.parentElement.append(fpara);
-
-console.log("first paragraph innerHTML : ", fpara.innerHTML);
-
-fpara.innerHTML = "Hi! This is <strong>important!</strong>";
+inputElement.addEventListener("input", inputChangedListener);
